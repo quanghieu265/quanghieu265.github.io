@@ -1,0 +1,10 @@
+.truyenkieu{
+    font-size: 24px;
+    color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 2; /* khoảng cách giữa các dòng */
+    background-color: burlywood;
+    margin-top: 20px; /* cách phía trên */
+    margin-left: 30px; /* cách lề bên trái */
+    padding: 10px;
+}
