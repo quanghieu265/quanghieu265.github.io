@@ -1,0 +1,46 @@
+.route-info{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 100%;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    row-gap: 50px;
+    column-gap: 30px;
+
+}
+.route-data{
+    display: grid;
+    grid-template-rows: 55% 45%;
+}
+.route-data img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+.route-text{
+    padding: 22px;
+    line-height: 1.5;
+}
+.route-title{
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+.route-detail{
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-size: 16px;
+    color: #464646;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.route-session{
+    font-weight: 600;
+    font-size: 16px;
+    color: #757575;
+}

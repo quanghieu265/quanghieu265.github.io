@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#body{
+    display: block;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 0;
+    font-size: 16px;
+    line-height: 1.5 !important;
+}
+.container{
+    padding-top: 50px;
+    width: 1250px;
+    height: 100%;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+}
+.content1{
+    display: flex;
+    height: 100%;
+    gap: 30px;
+}
+
+.content2{
+    margin: 60px auto 60px auto;
+    display: flex;
+    height: 100%;
+    gap: 30px;
+    text-align: center;
+    line-height: 1.5;
+}
+.video{
+height: 520px;
+width: 70%;
+
+}
+.video img{
+    object-fit:fill;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.25rem;
+}
+.topic{
+    height: 520px;
+    width: 30%;
+    display: grid;
+    grid-template-rows:  1fr 1fr 1fr 1fr;
+    row-gap: 20px;
+}
+.topic-content{
+    height: 100%;
+    width: 100%;
+   display: grid;
+   grid-template-columns: 100px auto;
+   column-gap: 10px;
+}
+.topic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+.topic-info {
+    padding: 20px 10px 10px 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+
+}
+.topic-title{
+    color: #464646;
+
+    font-size: 16px;
+}
+.topic-autho{
+    font-size: 0.8rem;
+    color: #757575;
+}
+.topic-text{
+    margin-top: 15px;
+    color: #464646;
+    font-size: 1rem;
+}
+.topic-des{
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #999;
+    width: 80%;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+.border{
+
+    border-radius: 0.5rem;
+    box-shadow: rgb(0 0 0 / 15%) 0 0 10px;
+}
