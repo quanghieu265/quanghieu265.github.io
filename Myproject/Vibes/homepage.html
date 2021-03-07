@@ -22,9 +22,9 @@
             <div class="menu">
                 <div>
                     <ul class="row">
-                        <li>Home</li>
-                        <li>Our Story</li>
-                        <li>Shop</li>
+                        <li><a href="#" target="_blank">Home</a></li>
+                        <li><a href="#ourstory">Our Story</a></li>
+                        <li><a href="#shop">Shop</a></li>
                     </ul>
                 </div>
                 <div class="page-name">
@@ -32,9 +32,23 @@
                 </div>
                 <div>
                     <ul class="row">
-                        <li>Instagram</li>
-                        <li>Contact</li>
-                        <li>Sign In</li>
+                        <li><a href="#insta">New Item</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li class="sign-in">Sign In
+                            <ul>
+                                <div class="login">
+                                    <form class="login-form">
+                                        <div class="text-flex">
+                                            <input class="text-login" id="username" type="text" placeholder=" Name">
+                                            <input class="text-login" id="email" type="text" placeholder=" Email">
+                                        </div>
+                                        <div class="button-flex">
+                                            <button value="submit" class="button-login" type="submit">Submit</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -42,7 +56,7 @@
     </header>
     <main>
         <div class="container">
-            <div class="story">
+            <div id="ourstory" class="story">
                 <div class="story-title">Meet Vibes</div>
                 <div class="story-info">
                     <p>What is Vibes?</p>
@@ -57,7 +71,7 @@
             </div>
         </div>
         <div class="container">
-            <div class="shopping">
+            <div id="shop" class="shopping">
                 <div class="story-info">Shopping With Us </div>
                 <div class="menu-list">
                     <div class="item">
@@ -99,72 +113,126 @@
             </div>
         </div>
         <div class="container">
-            <div class="follow story-info">
+            <div id="insta" class="follow story-info">
                 <p>Vibe's Life</p>
-                <p class="latin-normal text">Follow Vibes On Instagram </p>
-                <p class="latin-normal text">@vibeslife</p>
-                <div class="insta-list">
-                    <div class="insta-img">
-                        <a href="#" target="_blank">
-                            <img class="zoom" src="./insta/1.jpg" alt="instaimg" />
-                        </a>
+                <p class="latin-normal text">Discover pieces form our new collection : STAY YOU.</p>
+                <p class="latin-normal text">SELECT STYLES ARE NOW UP TO 25% OFF.</p>
+                <div class="hover-grid">
+                    <div class="hover-img">
+                        <div class="hover-change">
+                            <img class="kid" src="./product/hood2.jpg" alt="imagetest" title="hover-img" />
+                            <img class="mature" src="./product/hood1.jpg" alt="imagetest" title="hover-img" />
+                        </div>
+                        <div class="item-dot">
+                            <p class="item-font">Slim Fit Jersey Blazer</p>
+                            <p class="item-font">$34.99</p>
+                            <p class="item-font">Color:
+                                <span class="dot" style="background-color: gray;"></span>
+                            </p>
+                        </div>
                     </div>
-                    <div class="insta-img">
-                        <a href="#" target="_blank">
-                            <img class="zoom" src="./insta/2.jpg" alt="instaimg" />
-                        </a>
+                    <div class="hover-img">
+                        <div class="hover-change">
+                            <img class="kid" src="./product/itema.jpg" alt="imagetest" title="hover-img" />
+                            <img class="mature" src="./product/itemaa.jpg" alt="imagetest" title="hover-img" />
+                        </div>
+                        <div>
+                            <p class="item-font">Reflective Hoodie</p>
+                            <p class="item-font">$ 39.99</p>
+                            <p class="item-font">Color:
+                                <span class="dot" style="background-color: black;"></span>
+                            </p>
+                        </div>
                     </div>
-                    <div class="insta-img">
-                        <a href="#" target="_blank">
-                            <img class="zoom" src="./insta/3.jpg" alt="instaimg" />
-                        </a>
+                    <div class="hover-img">
+                        <div class="hover-change">
+                            <img class="kid" src="./product/itemb.jpg" alt="imagetest" title="hover-img" />
+                            <img class="mature" src="./product/itembb.jpg" alt="imagetest" title="hover-img" />
+                        </div>
+                        <div>
+                            <p class="item-font">Regular Fit Sweatshorts</p>
+                            <p class="item-font">$12.99</p>
+                            <div class="item-font"> Color:
+                                <span class="dot" style="background-color: lightblue;"></span>
+                                <span class="dot" style="background-color: black"></span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="insta-img">
-                        <a href="#" target="_blank">
-                            <img class="zoom" src="./insta/4.jpg" alt="instaimg" />
-                        </a>
+                    <div class="hover-img">
+                        <div class="hover-change">
+                            <img class="kid" src="./product/itemc.jpg" alt="imagetest" title="hover-img" />
+                            <img class="mature" src="./product/itemcc.jpg" alt="imagetest" title="hover-img" />
+                        </div>
+                        <div>
+                            <p class="item-font">Slim Fit Cargo Joggers</p>
+                            <p class="item-font">$29.99</p>
+                            <p class="item-font">Color:
+                                <span class="dot" style="background-color: black;"></span>
+                            </p>
+                        </div>
                     </div>
-                    <div class="insta-img">
-                        <a href="#" target="_blank">
-                            <img class="zoom" src="./insta/5.jpg" alt="instaimg" />
-                        </a>
+                    <div class="hover-img">
+                        <div class="hover-change">
+                            <img class="kid" src="./product/itemd.jpg" alt="imagetest" title="hover-img" />
+                            <img class="mature" src="./product/itemdd.jpg" alt="imagetest" title="hover-img" />
+                        </div>
+                        <div>
+                            <p class="item-font">Slim Fit Blazer</p>
+                            <p class="item-font">$ 69.99</p>
+                            <p class="item-font">Color: <span class="dot" style="background-color: blue;"></span></p>
+                        </div>
                     </div>
-                    <div class="insta-img">
-                        <a href="#" target="_blank">
-                            <img class="zoom" src="./insta/6.jpg" alt="instaimg" />
-                        </a>
+                    <div class="hover-img">
+                        <div class="hover-change">
+                            <img class="kid" src="./product/iteme.jpg" alt="imagetest" title="hover-img" />
+                            <img class="mature" src="./product/itemee.jpg" alt="imagetest" title="hover-img" />
+                        </div>
+                        <div>
+                            <p class="item-font">Cardigan with Zip</p>
+                            <p class="item-font">$ 34.99</p>
+                            <p class="item-font">Color:
+                                <span class="dot" style="background-color: olive;"></span>
+                            </p>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </div>
     </main>
     <footer>
         <div class="container">
-            <div class="sub ">
-                <p class="story-info">Subscribe Us</p>
+            <div id="contact" class="sub ">
+                <p class="story-info">SIGN UP FOR VIBES UPDATES </p>
+                <p class="latin-normal text">By entering your email address below, you consent to receiving our
+                    newsletter with access to our latest collections, events and initiatives.</p>
                 <div class="sub-grid">
                     <div class="grid1">
                         <p class="story-info" style="color: white;">Authority</p>
                         <p class="latin-normal text" style="color: white; font-style: normal;">Bui Quang Hieu</p>
                         <ul>
-                            <li><a class="latin-normal text" style="color: white; font-style: normal;"  href="mailto:hieu26594@gmail.com" target="_blank">hieu26594@gmail.com</a></li>
-                            <li><a class="latin-normal text" style="color: white; font-style: normal;" href="tel:0332056448" target="_blank">033-205-6448</a></li>
+                            <li><a class="latin-normal text" style="color: white; font-style: normal;"
+                                    href="mailto:hieu26594@gmail.com" target="_blank">hieu26594@gmail.com</a></li>
+                            <li><a class="latin-normal text" style="color: white; font-style: normal;"
+                                    href="tel:0332056448" target="_blank">033-205-6448</a></li>
                         </ul>
                         <div class="icon-style">
-                        <a href="#" target="_blank"><i class="fab fa-facebook-square size-icon"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-youtube-square size-icon"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-github-square size-icon"></i></a>
-                    </div>
+                            <a href="#" target="_blank"><i class="fab fa-facebook-square size-icon"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-youtube-square size-icon"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-github-square size-icon"></i></a>
+                        </div>
                         <section>
                             <div class="button-grid">
                                 <input class="input-style" id="username" type="text" placeholder=" Name">
                                 <input class="input-style" id="email" type="text" placeholder=" Email">
                                 <input class="input-style phone" id="phone" type="text" placeholder=" Phone Number">
-                                <textarea class="text-area" name="comment" placeholder=" Type Your Message Here..."></textarea>
+                                <textarea class="text-area" name="comment"
+                                    placeholder=" Type Your Message Here..."></textarea>
                             </div>
                             <button class="button-footer" type="submit">Submit</button>
                             <p class="latin-normal text" style="color: white; font-style: normal;">Vibes</p>
-                            <p class="latin-normal text" style="color: white; font-style: normal;">©2021 by Vibes. Proudly created by Me</p>
+                            <p class="latin-normal text" style="color: white; font-style: normal;">©2021 by Vibes.
+                                Proudly created by Me</p>
 
                         </section>
                     </div>

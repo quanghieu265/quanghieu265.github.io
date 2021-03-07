@@ -11,8 +11,10 @@ body{
     height: 100%;
     line-height: 1.5;
 }
-head{
+header{
+    position: fixed;
     width: 100%;
+    background-color: white;
 }
 .container {
     width: 100%;
@@ -21,7 +23,9 @@ head{
     margin: auto;
 
 }
-
+.menu a {
+    color: black;
+}
 .menu {
     width: 100%;
     height: 60px;
@@ -44,13 +48,67 @@ ul{
     gap: 30px;
 }
 .page-name{
-height: 100%;
-width: 100px;
+    height: 100%;
+    width: 100px;
 }
 
 .logo{
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
  
+}
+.sign-in{
+    cursor: pointer;
+}
+.login{
+    height: 200px;
+    width: 250px;
+    position: absolute;
+    right: 30px;
+    padding-top: 30px;
+    display: none;
+}
+.login-form{
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 12%);
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 60% 40%;
+}
+.sign-in:hover .login{
+    display: block;
+}
+.text-login::placeholder {
+    color:black;
+}
+.text-login{
+    width: 80%;
+    height: 30%;
+}
+.text-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: #F1EBDC;
+}
+.button-flex{
+    display: flex;
+    background-color: white;
+}
+.button-login {
+    width: 80%;
+    margin: auto;
+    height: 60%;
+    background-color: #313131;
+    color: white;
+    font-family: "HMSansLatin-Regular";
+    font-size: 16px;
+}
+.text-login:focus{
+    outline: none;
+}
+.button-flex:hover{
+    opacity: 0.5;
 }
