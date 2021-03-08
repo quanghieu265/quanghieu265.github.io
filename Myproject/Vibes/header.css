@@ -113,3 +113,18 @@ ul{
 .button-flex:hover .button-login{
     opacity: 0.7;
 }
+#arrow {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    right: 20px;
+    bottom: 20px;
+}
+
+.arrow {
+    color: grey;
+    font-size: 30px;
+}
