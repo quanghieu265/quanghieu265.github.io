@@ -25,13 +25,13 @@ body{
 .menu-list {
     width: 200px;
     height: 100%;
-    position: relative;
+    position: relative; /* set cho thằng đầu tiên đê thằng thứ 2 áp dụng absolute sẽ tụt xuông chân của thằng này */
     list-style: none;
     margin: 0;
     padding: 8px 0px 8px 12px;
     box-shadow: 0 0 2px 0 rgb(0 0 0 / 25%);
 }
-.layout /* items2-submenu */ {
+.layout /* sau khi dùng absoulte thì thêm top/bot right/left để định vị trí */ {
     position: absolute;
     top: 0;
     left: 200px;

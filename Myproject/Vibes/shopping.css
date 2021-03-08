@@ -1,5 +1,6 @@
 .shopping{
     width: 70%;
+    height: 100%;
     margin: auto;
     margin-top: 30px;
     text-align: center;
@@ -12,24 +13,18 @@
     column-gap: 30px;
     padding-top: 30px;
 }
+.text-item {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+}
 
 .item {
-    height: 600px;
+    height: 100%;
     width: 100%;
-    background-image:url(./img/clothe.jpg);
-    background-size: 100% 100%;
-    background-repeat:no-repeat ;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    position: relative;
 }
-.img2{
-    background-image: url(./img/img2.jpg);
-}
-.img3{
-    background-image: url(/img/img3.jpg);
-}
+
 .button-shop{
     color: #e5dfd9;;
     display: flex;
@@ -58,4 +53,7 @@ a {
     padding-right: 40px;
     padding-top: 12px;
 
+}
+.row li:hover a {
+    color: lightgray;
 }

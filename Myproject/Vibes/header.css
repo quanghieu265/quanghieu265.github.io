@@ -15,6 +15,7 @@ header{
     position: fixed;
     width: 100%;
     background-color: white;
+    z-index: 1;
 }
 .container {
     width: 100%;
@@ -109,6 +110,6 @@ ul{
 .text-login:focus{
     outline: none;
 }
-.button-flex:hover{
-    opacity: 0.5;
+.button-flex:hover .button-login{
+    opacity: 0.7;
 }
