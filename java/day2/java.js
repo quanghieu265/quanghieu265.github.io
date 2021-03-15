@@ -22,32 +22,29 @@ ngayThangNam();
 //2. Viết hàm trả về số ngày có trong 1 tháng.
 
 function soNgay(year, month) {
-    if (year % 4 === 0 || year % 400 === 0) {
-        console.log(`${year} là năm nhuận`);
-        if (month === 1 || month === 3 || month === 5 || month === 7 || month === 8 || month === 10 || month === 12) {
-            console.log("Tháng này có 31 ngày");
-        }
-        else if (month === 2) {
+    if ( year < 1 || month < 1 || month > 12) {
+        return;
+    }
+
+    if (month === 1 || month === 3 || month === 5 || month === 7 || month === 8 || month === 10 || month === 12) {
+        console.log("Tháng này có 31 ngày");
+    }
+    else if (month === 2) {
+        if (year % 4 === 0 || year % 400 === 0) {
+            console.log(`${year} là năm nhuận`);
             console.log("Tháng này có 29 ngày");
         }
         else {
-            console.log("Tháng này có 30 ngày")
-        }
-    }
-    else {
-        console.log(`${year} là năm không nhuận`);
-        if (month === 1) {
-            console.log("Tháng này có 31 ngày");
-        }
-        else if (month === 2) {
+            console.log(`${year} là năm không nhuận`);
             console.log("Tháng này có 28 ngày");
         }
-        else {
-            console.log("Tháng này có 30 ngày")
-        }
+
+    }
+    else {
+        console.log("Tháng này có 30 ngày")
     }
 }
-soNgay(2020, 6);
+soNgay(2020, 2);
 
 // 3. Tính tổng các chữ số trong 1 số nguyên dương
 
@@ -101,4 +98,21 @@ function translate(country) {
     }
 }
 translate("French");
-translate("asd")
+translate("asd");
+
+// kiểm tra xem N có phải số nguyên tố hay không
+function soNguyenTo(N) {
+    if (N <2 ) {
+        return;
+    }
+    if ( N === 2) {
+        console.log(`${N} là số nguyên tố`);
+    }
+    else if (N >2 && (N % 2 === 0 || N % Math.sqrt(N) === 0)) {
+        console.log(`${N} không là số nguyên tố`);
+    }
+    else {
+        console.log(`${N} là số nguyên tố`);
+    }
+}
+soNguyenTo(96);
