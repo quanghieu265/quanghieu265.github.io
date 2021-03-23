@@ -112,12 +112,10 @@ drawRightRectangle(7, 1);
 document.writeln("<br>");
 document.writeln("5. Vẽ tam giác cân ngược:");
 
-function drawIsoRectangle(m, n) {
+function drawIsoRectangle(n) {
     document.writeln("<br>");
     if (
-        m <= 0 ||
         n <= 0 ||
-        Number.isInteger(m) === false ||
         Number.isInteger(n) === false
     ) {
         document.writeln("Thông số đầu vào không hợp lệ");
@@ -128,18 +126,87 @@ function drawIsoRectangle(m, n) {
     for (let i = 0; i < n; i++) {
         str += "<br>";
         str += "<br>";
-        for (let j = 0; j < m; j++) {
-            if (j>=i && j < m - i) {
+        for (let j = 0; j < n * 2 - 1; j++) {
+            if (j >= i && j < (n * 2 - 1) - i) {
                 str += "* ";
             }
             else {
-                str += "\xa0 ";
+                str += "* ".fontcolor("white");
             }
         }
     }
     document.writeln(str);
 }
-drawIsoRectangle(7, 4);
+drawIsoRectangle(4);
+
+document.writeln("<br>");
+document.writeln("Vẽ ngôi nhà");
+
+function ngoiNha(h) {
+    document.writeln("<br>");
+    if (
+        h <= 0 ||
+        Number.isInteger(h) === false
+    ) {
+        document.writeln("Thông số đầu vào không hợp lệ");
+        return;
+    }
+    let str = "";
+    for (i = 0; i < h * 2; i++) {
+        str += "<br>";
+        for (j = 0; j < h; j++) {
+            if (j < i + 1 && j < h * 2 - i) {
+                str += "* "
+            }
+            else {
+                str += "* ".fontcolor("white");
+            }
+        }
+    }
+    document.writeln(str);
+}
+ngoiNha(5);
+
+
+document.writeln("<br>");
+document.writeln("hình kim cương");
+
+function kimCuong(h) {
+    document.writeln("<br>");
+    if (
+        h <= 0 || h % 2 === 0 ||
+        Number.isInteger(h) === false
+    ) {
+        document.writeln("Thông số đầu vào không hợp lệ");
+        return;
+    }
+    let str = "";
+    for (i = 0; i < h; i++) {
+        str += "<br>";
+        if (0 <= i && i <= h / 2) {
+            for (j = 0; j < h; j++) {
+                if (j >= (h - 1) / 2 - i && j <= (h - 1) / 2 + i) {
+                    str += "* ";
+                }
+                else {
+                    str += "* ".fontcolor("white");
+                }
+            }
+        }
+        else {
+            for (j = 0; j < h; j++) {
+                if (j >= (h - 1) / 2 - (h - 1 - i) && j <= (h - 1) / 2 + (h - 1 - i)) {
+                    str += "* ";
+                }
+                else {
+                    str += "* ".fontcolor("white");
+                }
+            }
+        }
+    }
+    document.writeln(str);
+}
+kimCuong(9);
 
 
 
