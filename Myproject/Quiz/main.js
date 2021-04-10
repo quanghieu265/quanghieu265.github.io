@@ -4,6 +4,7 @@ const progressText = document.querySelector('#progressText');
 const scoreText = document.querySelector('#score');
 const progressBarFull = document.querySelector('#progressBarFull');
 const scoreDisplay = document.querySelector('.end-text');
+const btn = document.querySelector('.btn');
 //tạo biến chứa câu hỏi sẽ hiện thỉ
 let currentQuestion = {};
 //tạo biến chứa số điểm
@@ -69,7 +70,9 @@ startGame = () => {
     //chạy hàm tạo câu hỏi
     getNewQuestion();
 }
+
 let interval = undefined;
+
 getNewQuestion = () => {
 
         //Tạo hàm đếm ngược thời gian
@@ -93,6 +96,10 @@ getNewQuestion = () => {
             document.getElementById('end').classList.remove('hidden');
             scoreDisplay.innerHTML = `Bạn đã trả lời đúng ${correctAns} trên ${maxQuestion} câu hỏi  <br>
             Điểm số của bạn là ${score}`;
+            btn.addEventListener('click', function() {
+                location.reload();
+            })
+
 
         }
         //tạo điểm số
@@ -123,8 +130,8 @@ getNewQuestion = () => {
     //tạo hàm trợ giúp
 function help() {
     let helpNumber = 0;
+    let arrayRandom = [0, 1, 2, 3];
     for (let i = 0; i < choices.length; i++) {
-        let arrayRandom = [0, 1, 2, 3];
         let randomHelp = Math.floor(Math.random() * arrayRandom.length);
         if (choices[arrayRandom[randomHelp]].innerHTML !== currentQuestion.correct) {
             choices[arrayRandom[randomHelp]].innerHTML = '';
