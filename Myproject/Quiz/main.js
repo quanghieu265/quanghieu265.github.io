@@ -76,7 +76,7 @@ let interval = undefined;
 getNewQuestion = () => {
 
         //Tạo hàm đếm ngược thời gian
-        timePlay = 300;
+        timePlay = 15;
         $(".time").html(`${timePlay}s`);
         interval = setInterval(countDown, 1000);
 
