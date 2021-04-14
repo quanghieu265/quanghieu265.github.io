@@ -156,11 +156,22 @@ choices.forEach(choice => {
             score += 100
             correctAns++;
         }
+        for (let i = 0; i < choices.length; i++) {
+            if (choices[i].innerHTML !== this.innerHTML) {
+                choices[i].classList.remove('hidden');
+
+            }
+        }
         //add class vào phần tử đc click
         this.parentElement.classList.add(classApply);
         //tạo hàm để sau 1 khoảng thời gian sẽ remove class đã chèn và chuyển câu
         setTimeout(() => {
                 this.parentElement.classList.remove(classApply);
+                for (let i = 0; i < choices.length; i++) {
+                    choices[i].classList.remove('hidden');
+
+
+                }
                 getNewQuestion();
             }, 1000) //set thời gian (1s)
 
