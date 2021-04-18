@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+a.navbar-brand {
+    margin: auto;
+}
+
+.container-fluid {
+    background-color: #34465c;
+}
+
+.logo-tech {
+    width: 120px;
+}
+
+.no-pad-top {
+    padding-top: 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+.nav-link {
+    font-size: 0.95rem;
+}
+
+.nav-contain {
+    min-height: 60px;
+}
+
+.fas {
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.shopping {
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    top: 0px;
+    right: -10px;
+}
+
+.margin-left {
+    margin-left: 10px;
+}
+
+.fa-user-alt {
+    margin-left: 10px;
+    color: white;
+}
+
+.modal-header {
+    padding: 0;
+    border-bottom: none;
+}
+
+.f-width {
+    width: 50%;
+    color: black !important;
+}
+
+.nav-tabs {
+    width: 100%;
+}
+
+.nav-link.active {
+    background-color: #1e3c740f !important;
+}
+
+.navbar-nav .nav-link:focus {
+    color: #c4c4c4 !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #c4c4c4 !important;
+}
+
+.form-control {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.modal-footer {
+    justify-content: center;
+}
+
+.btn {
+    width: 100%;
+    background-color: #66bb6a;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #66bb6ade;
+    border-color: none;
+}
+
+.btn-primary {
+    border: none;
+}
+
+.modal-body {
+    padding: 1.75rem;
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 400px;
+        margin: 5rem auto auto auto;
+    }
+}
+
+.modal-dialog {
+    max-width: 400px;
+    margin: 5rem auto auto auto;
+}
+
+.icon-sign {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.fab {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    overflow: hidden;
+    margin: 0 10px 0 10px;
+}
+
+.sign-in-content {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
