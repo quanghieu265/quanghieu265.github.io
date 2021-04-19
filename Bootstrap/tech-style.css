@@ -143,3 +143,15 @@ a.navbar-brand {
     height: 100%;
     text-align: center;
 }
+.form-check{
+    margin-bottom: 1rem;
+}
+.title-menu{
+    margin-bottom: 1rem;
+}
+.sticky{
+    position: sticky;
+}
+.grid-bot{
+    row-gap: 24px;
+}
