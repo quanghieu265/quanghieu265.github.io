@@ -1,19 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-header {
+body {
+    max-width: 1440px;
+    margin: auto;
+}
+
+footer {
     width: 100%;
     height: 100%;
+    background-color: #342C2C;
 }
 
 .container {
     background-image: url(./Background.jpg);
-    background-size: contain;
     background-repeat: no-repeat;
     padding: 40px 50px 0px 50px;
+    margin: auto;
+    text-align: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.section-two {
+    width: 100%;
+    height: 100%;
+    padding: 36px 85px 0px 85px;
+    text-align: center;
+}
+
+.footer-content {
+    width: 100%;
+    height: 100%;
+    padding: 36px 85px 36px 85px;
+    text-align: center;
+}
+
+.section-three {
+    width: 100%;
+    height: 100%;
+    padding: 85px;
+    text-align: center;
+}
+
+.section-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    text-shadow: 0px 10px 30px rgba(0, 0, 0, 0.0212013);
+    color: #000;
+}
+
+.section-info {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #696969;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.0910043);
+}
+
+.section-item {
+    margin-top: 60px;
+}
+
+.img-box {
+    background-color: #E3E3E3;
+    width: 100%;
+    padding: 20px 30px;
+    height: 80%;
+}
+
+.name-car {
+    font-weight: 600;
+    font-size: 24px;
+    padding-top: 8px;
+}
+
+.price-car {
+    background-image: url(./cars/Rectangle\ 4.png);
+    background-repeat: no-repeat;
+    width: 90px;
+    height: 45px;
+    position: absolute;
+    background-size: contain;
+    top: 25px;
+    right: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.price {
+    padding-bottom: 5px;
+}
+
+.relative {
+    position: relative;
+    padding-bottom: 32px;
+}
+
+.rectangle {
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 .nav-bar {
@@ -35,6 +139,25 @@ header {
 .items a {
     text-decoration: none;
     color: white;
+    font-size: 16px;
+}
+
+.items a:hover {
+    color: #696969;
+}
+
+.sign-up a:hover {
+    color: orange !important;
+}
+
+button:hover {
+    background-color: #696969;
+    color: white;
+}
+
+.relative a {
+    text-decoration: none;
+    color: black;
 }
 
 .head-content {
@@ -45,7 +168,7 @@ header {
     gap: 15px;
 }
 
-form {
+.search {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     height: 100%;
@@ -109,8 +232,54 @@ button {
     color: #757575 !important
 }
 
+.btn-show {
+    background-color: #F5A623;
+    font-weight: 500;
+    font-size: 15px;
+    width: auto;
+    padding: 18px 24px;
+    color: white;
+}
+
+.message {
+    background-image: url(./Background.jpg);
+    background-repeat: no-repeat;
+    padding: 70px 50px 80px 50px;
+    margin: auto;
+    text-align: center;
+}
+
+.message-form {
+    width: 50%;
+    margin: auto;
+}
+
+.message-grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.message-text {
+    font-weight: 600;
+    font-size: 40px;
+    color: white;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    text-shadow: 0px 10px 30px rgba(0, 0, 0, 0.129076);
+}
+
+.message-info {
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.381284);
+    margin-bottom: 39px;
+}
+
 @media only screen and (max-width: 1000px) {
-    form {
+    .search {
         display: flex;
         flex-direction: column;
     }
