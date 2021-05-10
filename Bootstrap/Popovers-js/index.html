@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Popovers</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="pop-contain">
+            <button class="pop-btn">Popover on Top</button>
+            <div class="pop-content top">Popover on Top</div>
+        </div>
+        <div class="pop-contain">
+            <button class="pop-btn">Popover on Right</button>
+            <div class="pop-content right">Popover on Right</div>
+        </div>
+        <div class="pop-contain">
+            <button class="pop-btn">Popover on Left</button>
+            <div class="pop-content left">Popover on Left</div>
+        </div>
+        <div class="pop-contain">
+            <button class="pop-btn">Popover on Bottom</button>
+            <div class="pop-content">Popover on Bottom</div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $('.pop-btn').click(function() {
+            let index = $('.pop-btn').index(this); // hàm lấy số index , rồi lưu vào biến
+            $('.pop-content').eq(index).toggle();
+        })
+    </script>
+</body>
+
+</html>

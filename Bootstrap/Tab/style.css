@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 30px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    border-bottom: 1px solid #ddd;
+}
+
+li {
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: -1px;
+}
+
+.menu-content {
+    padding-top: 30px;
+}
+
+.menu-text {
+    display: none;
+}
+
+.active {
+    border: 1px solid wheat;
+    border-bottom-color: white;
+}
+
+.show {
+    display: block;
+}

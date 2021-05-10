@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tab</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <li class="active">menu1</li>
+                <li>menu2</li>
+                <li>menu3</li>
+                <li>menu4</li>
+            </ul>
+        </div>
+        <div class="menu-content">
+            <div class="menu-text show">Menu 1 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            <div class="menu-text">Menu 2 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</div>
+            <div class="menu-text">Menu 3 Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</div>
+            <div class="menu-text">Menu 4 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $('li').click(function() {
+            $('li').removeClass("active");
+            $(this).addClass("active");
+            let index = $(this).index();
+            $('.menu-text').removeClass("show");
+            $('.menu-text').eq(index).addClass("show");
+        })
+    </script>
+</body>
+
+</html>

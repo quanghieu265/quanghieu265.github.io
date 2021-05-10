@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 50%;
+    margin: 50px auto;
+}
+
+.accordion-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: thin solid rgb(243, 205, 213);
+    cursor: pointer;
+}
+
+.accordion-text {
+    border: thin solid rgb(243, 205, 213);
+    overflow: hidden;
+    max-height: 0;
+    transition: all 0.5s ease;
+    padding: 0 15px;
+}
+
+.show {
+    padding: 15px;
+    max-height: 500px;
+}
