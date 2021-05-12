@@ -35,6 +35,7 @@
     <script>
         let timeOut;
         $('.show-toasts').click(function() {
+            clearTimeout(timeOut);
             $('.toasts').toggleClass("fade-in")
             timeOut = setTimeout(() => {
                 $('.toasts').toggleClass('fade-in')
