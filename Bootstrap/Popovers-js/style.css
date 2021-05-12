@@ -1,12 +1,17 @@
 .container {
     display: flex;
     gap: 10px;
-    justify-content: space-around;
-    margin: 100px auto;
+    justify-content: space-between;
+    margin: 100px 50px;
+    flex-wrap: wrap;
 }
 
 button {
     position: relative;
+}
+
+.pop-btn {
+    padding: 10px;
 }
 
 .pop-content {
@@ -14,18 +19,21 @@ button {
     background-color: gray;
     padding: 10px;
     display: none;
+    z-index: 1;
 }
 
 .top {
-    top: 60px;
+    transform: translateY(-80px);
 }
 
 .right {
-    top: 100px;
-    right: 1012px;
+    transform: translate(130px, -38px);
 }
 
 .left {
-    top: 100px;
-    left: 1010px;
+    transform: translate(-105px, -38px);
+}
+
+.bottom {
+    transform: translateY(1px);
 }
