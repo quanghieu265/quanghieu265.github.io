@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>ProgressBar</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>ProgressBar</h1>
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+        <div class="button-container">
+            <button type="button" class="start btn btn-outline-primary">Start</button>
+            <button type="button" class="pause btn  btn-outline-secondary" disabled>Pause</button>
+            <button type="button" class="reset btn btn-outline-danger">Reset</button>
+        </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        let width = $('.progress').width();
+        let int;
+
+        function frame() {
+            if (width == 100) {
+                clearInterval(int);
+            } else {
+                width++;
+                $(".progress").width(`${width}%`);
+                $(".progress").html(`${width}%`);
+
+            }
+        }
+        $('.start').click(function() {
+            $('.start').attr('disabled', true);
+            $('.pause').attr('disabled', false);
+            int = setInterval(frame, 1000);
+        })
+
+        $('.pause').click(function() {
+            if ($('.pause').html() == "Pause") {
+                $('.pause').html("Resume")
+                clearInterval(int);
+            } else {
+                $('.pause').html('Pause')
+                int = setInterval(frame, 1000);
+            };
+
+
+        })
+        $('.reset').click(function() {
+            $('.start').attr('disabled', false);
+            $('.pause').attr('disabled', true);
+            clearInterval(int);
+            width = 0
+            $(".progress").width(width);
+
+        })
+    </script>
+</body>
+
+</html>

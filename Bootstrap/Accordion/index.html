@@ -23,11 +23,43 @@
                 </p>
             </div>
         </div>
+        <div class="accordion-contain">
+            <div class="accordion-head">
+                <h2>Accordion Item #2</h2>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="accordion-text">
+                <p>This is the first item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding
+                    via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.
+                </p>
+            </div>
+        </div>
+        <div class="accordion-contain">
+            <div class="accordion-head">
+                <h2>Accordion Item #3</h2>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="accordion-text">
+                <p>This is the first item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding
+                    via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.
+                </p>
+            </div>
+        </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
         $('.accordion-head').click(function() {
-            $('.accordion-text').toggleClass('show');
+            if ($(this).siblings('.accordion-text').hasClass('show') == false) {
+                $('.accordion-text').removeClass('show');
+                $('.fas').removeClass('rotate');
+                $(this).siblings('.accordion-text').addClass('show');
+                $(this).children('.fas').addClass('rotate');
+            } else {
+                $(this).siblings('.accordion-text').removeClass('show');
+                $(this).children('.fas').removeClass('rotate');
+
+            }
+
         })
     </script>
 </body>

@@ -1,0 +1,58 @@
+.container-fluid {
+    position: relative;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.toasts-title {
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    ;
+    padding: 8px 10px;
+}
+
+.toasts-content {
+    padding: 8px 10px;
+}
+
+.toasts {
+    position: fixed;
+    font-size: 14px;
+    max-width: 350px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+    border-radius: 5px;
+    bottom: 15px;
+    right: 15px;
+    opacity: 0;
+    transition: all 0.2s ease-in;
+}
+
+.button-close {
+    margin-left: auto;
+    font-size: 16px;
+    color: #7d7d7d;
+    cursor: pointer;
+}
+
+.button-close:hover .fas {
+    color: #000000;
+}
+
+.fade-in {
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.2s;
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

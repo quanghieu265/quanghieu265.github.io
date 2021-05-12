@@ -1,0 +1,29 @@
+.progress-bar {
+    height: 30px;
+    width: 100%;
+    background-color: grey;
+    border-radius: 5px;
+}
+
+.progress {
+    height: 100%;
+    width: 0;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.button-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
