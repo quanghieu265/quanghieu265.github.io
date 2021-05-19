@@ -48,20 +48,12 @@
 
             let results = JSON.stringify(formJSON);
 
-            sendJSON = function() {
-                // Creating a XHR object
-                let xhr = new XMLHttpRequest();
-                let url = "test.json";
-                // open a connection
-                xhr.open("POST", url, true);
+            let xhttp = new XMLHttpRequest();
 
-                // Set the request header i.e. which type of content you are sending
-                xhr.setRequestHeader("Content-Type", "application/json");
 
-                // Sending data with the request
-                xhr.send(results);
-            }
-            sendJSON();
+            xhttp.open("POST", "database.json", true);
+            xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xhttp.send(results);
 
         }
         let form = document.querySelector('form');
