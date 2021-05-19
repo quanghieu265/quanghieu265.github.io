@@ -1,0 +1,27 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Administrator",
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "phone": "123-456-7890",
+      "birthday": "11/11/1991",
+      "gender": "Male",
+      "avatar": "https://robohash.org/faceresintblanditiis.bmp?size=150x150&set=set1"
+    },
+    {
+      "id": 2,
+      "name": "Chancey Di Maria",
+      "email": "cdi1@simplemachines.org",
+      "password": "simplemachines",
+      "phone": "462-441-6079",
+      "birthday": "4/4/2008",
+      "bio": "In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.\n\nSuspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.\n\nMaecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.",
+      "gender": "Male",
+      "avatar": "https://robohash.org/modiinventoremolestias.png?size=150x150&set=set1"
+    },
+]
+}
+
+
