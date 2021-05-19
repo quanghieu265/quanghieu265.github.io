@@ -23,10 +23,10 @@
                 <p>Số Điện thoại</p>
             </div>
             <div class="info-list">
-                <div class="name">Quang Hiếu</div>
-                <div class="birth">05/26/1994</div>
-                <div class="email">hieu26594@gmail.com</div>
-                <div class="numberr">033-205-JQK</div>
+                <div class="name"></div>
+                <div class="birth"></div>
+                <div class="email"></div>
+                <div class="number"></div>
                 <div class="button-list">
                     <a href="./adding-form.html" class="edit"><i class="far fa-edit"></i>Chỉnh sửa</a> |
                     <button type="button" class="remove"><i class="fas fa-trash-alt"></i><span>Xóa</span></button>
@@ -74,12 +74,25 @@
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
                 var myObj = JSON.parse(this.responseText);
-                document.getElementsByClassName("name").innerHTML = myObj.users[0].name;
+                for (i = 0; i < myObj.users.length; i++) {
+                    document.getElementsByClassName("name")[i].innerHTML = myObj.users[i].name;
+                    document.getElementsByClassName("birth")[i].innerHTML = myObj.users[i].birthday;
+                    document.getElementsByClassName("email")[i].innerHTML = myObj.users[i].email;
+                    document.getElementsByClassName("number")[i].innerHTML = myObj.users[i].phone;
+                    $(".info-list:first").clone().appendTo(".student-list");
+                }
+
             }
         };
         xmlhttp.open("GET", "database.json", true);
         xmlhttp.send();
     </script>
 </body>
+<!-- $('.cloneitem:first').clone().appendTo('#container'); -->
+<!-- Mỗi vằng lặp i sẽ clone lại rồi fill giá trị -->
+
+<!-- Thêm và update giá trị vào database chưa test, có thể bị ghi đè mất giá trị cũ, nếu không được thì dùng method get và post ???  -->
+<!-- thêm giá trị vào database - dùng parse Json -->
+<!-- update giá trị vào database - dùng stringfy Json -->
 
 </html>
