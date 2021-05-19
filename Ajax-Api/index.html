@@ -73,8 +73,8 @@
         //Xác định một hàm được gọi khi thuộc tính readyState thay đổi 
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-                var myUser = JSON.parse(this.responseText);
-                document.getElementsByClassName('name').innerHTML = myUser.users[0].name
+                var myObj = JSON.parse(this.responseText);
+                document.getElementsByClassName("name").innerHTML = myObj.users[0].name;
             }
         };
         xmlhttp.open("GET", "database.json", true);
